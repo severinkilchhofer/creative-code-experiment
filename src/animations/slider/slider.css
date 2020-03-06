@@ -1,3 +1,23 @@
 .slider {
     transform: rotate(180deg);
 }
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    cursor: pointer;
+}
+
+.next {
+    background-color: #7700ff;
+}
+
+.previous {
+    background-color: #af008c;
+}

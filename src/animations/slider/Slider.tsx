@@ -20,6 +20,8 @@ export const Slider = ({parentCallback}) => {
                        value={slidervalue}
                        className="slider"/>
             </div>
+            <a href="https://wschoeck.github.io/creativecode/" className="button previous">Previous Experiment</a>
+            <a href="https://natasharuf.github.io/designcodeexperiment/" className="button next">Next Experiment</a>
         </>
     );
 };
