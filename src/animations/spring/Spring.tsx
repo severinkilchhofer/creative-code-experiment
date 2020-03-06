@@ -15,7 +15,6 @@ export const Spring = (props) => {
     const [colors, setColors] = useState(initialColors);
 
     useEffect(() => {
-        console.log('spring', props.msValue);
         setTimeout(() => setColors(shuffle(colors)), props.msValue);
     }, [colors]);
 
@@ -32,4 +31,6 @@ export const Spring = (props) => {
     );
 };
 
-const initialColors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#AF008C", "#A309E1", "#AC1AFF", "#A700FF"];
+const initialColors = ["#405DE6", "#5851D8", "#833AB4", "#C13584", "#E1306C",
+    "#FD1D1D", "#F56040", "#F77737", "#FCAF45", "#FFDC80"];
+

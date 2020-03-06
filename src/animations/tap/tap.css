@@ -1,0 +1,34 @@
+.link {
+    border: none;
+    background-color: #5851d8;
+    color: white;
+    border-radius: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 15px 0 2px 30px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #ffdc80;
+    color: #5852d9;
+}
+
+@media only screen and (max-width: 600px) {
+    .link {
+        border: none;
+        background-color: #5851d8;
+        color: white;
+        border-radius: 20px;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 15px 0 2px 30px;
+        cursor: pointer;
+    }
+}
