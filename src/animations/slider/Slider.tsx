@@ -14,8 +14,8 @@ export const Slider = ({parentCallback}) => {
                        min="50"
                        max="1500"
                        onChange={(event) => {
-                           changeSliderValue(event.target.value);
-                           parentCallback(event.target.value);
+                           changeSliderValue(event.target.valueAsNumber);
+                           parentCallback(event.target.valueAsNumber);
                        }}
                        value={slidervalue}
                        className="slider"/>
