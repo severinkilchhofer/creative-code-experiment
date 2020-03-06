@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from "react";
 import './App.css';
+import {Spring} from "./animations/spring/Spring";
+import {Slider} from "./animations/slider/Slider";
+import {useEffect, useState} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// import "./styles.css";
+
+
+const App = () => {
+    const [initvalue, setValue] = useState(5000);
+
+    useEffect(() => {
+        console.log('app', initvalue);
+        setValue(initvalue)
+    }, [initvalue]);
+
+    return (
+        <>
+            <div className="example-container">
+                <Spring msValue={initvalue}/>
+            </div>
+            <Slider parentCallback={setValue}/>
+        </>
+    );
+};
 
 export default App;
